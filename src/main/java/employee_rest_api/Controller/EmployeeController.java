@@ -20,6 +20,7 @@ public class EmployeeController {
 
         @GetMapping("/getEmployeeDetails")
         public ResponseEntity<List<Employee>> getEmployeeDetails(){
+            System.out.println("getEmployeeDetails");
             return ResponseEntity.ok(employeeService.getEmployee());
         }
 
